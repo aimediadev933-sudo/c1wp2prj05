@@ -59,7 +59,7 @@
         }
 
         .logo-container {
-            height: 60px;
+            height: 80px;
             width: auto;
             background: var(--white);
             padding: 10px;
@@ -78,7 +78,7 @@
         .logo {
             height: 60px;
             width: auto;
-            max-width: 150px;
+            max-width: 160px;
             object-fit: contain;
         }
 
@@ -285,7 +285,12 @@
             }
 
             .logo-container {
-                height: 50px;
+                height: 60px;
+            }
+
+            .logo {
+                height: 45px;
+                max-width: 130px;
             }
 
             .nav-links {
@@ -342,6 +347,19 @@
                 padding: 0.4rem 0.8rem;
                 font-size: 0.9rem;
             }
+
+            .logo-section {
+                gap: 0.5rem;
+            }
+
+            .logo-container {
+                height: 50px;
+            }
+
+            .logo {
+                height: 35px;
+                max-width: 100px;
+            }
         }
 
         /* Smooth scrolling */
@@ -371,64 +389,16 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo-section">
-                    <!-- TEIN*CC Logo -->
                     <div class="logo-container">
-                        <svg class="logo" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="400" height="200" fill="#7B2D8E"/>
-                            <!-- Network splash design -->
-                            <g fill="#C44FCF">
-                                <ellipse cx="320" cy="40" rx="15" ry="8" transform="rotate(45 320 40)"/>
-                                <ellipse cx="340" cy="25" rx="20" ry="12" transform="rotate(30 340 25)"/>
-                                <ellipse cx="360" cy="50" rx="25" ry="15" transform="rotate(60 360 50)"/>
-                                <ellipse cx="370" cy="70" rx="18" ry="10" transform="rotate(90 370 70)"/>
-                                <ellipse cx="350" cy="85" rx="22" ry="13" transform="rotate(120 350 85)"/>
-                                <ellipse cx="325" cy="75" rx="16" ry="9" transform="rotate(150 325 75)"/>
-                                <ellipse cx="310" cy="60" rx="12" ry="7" transform="rotate(180 310 60)"/>
-                            </g>
-                            <text x="200" y="120" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle">TEIN CC</text>
-                            <text x="200" y="150" font-family="Arial, sans-serif" font-size="18" fill="white" text-anchor="middle">COOPERATION CENTER</text>
-                        </svg>
+                        <img src="images/logos/tein-logo.png" alt="TEIN*CC Logo" class="logo" onerror="this.style.display='none';">
                     </div>
                     
-                    <!-- Asia@Connect Logo -->
                     <div class="logo-container">
-                        <svg class="logo" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="400" height="200" fill="white"/>
-                            <!-- Curved design element -->
-                            <defs>
-                                <linearGradient id="asiaGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                    <stop offset="0%" style="stop-color:#FF6B8A;stop-opacity:1" />
-                                    <stop offset="50%" style="stop-color:#FF8C42;stop-opacity:1" />
-                                    <stop offset="100%" style="stop-color:#87CEEB;stop-opacity:1" />
-                                </linearGradient>
-                            </defs>
-                            <path d="M50 50 Q150 20 250 50 Q350 80 380 50 Q350 120 250 100 Q150 80 50 110 Z" fill="url(#asiaGradient)"/>
-                            <text x="120" y="130" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#FF8C42">Asi@</text>
-                            <text x="200" y="130" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#2C3E50">Connect</text>
-                        </svg>
+                        <img src="images/logos/asia-connect-logo.png" alt="Asia@Connect Logo" class="logo" onerror="this.style.display='none';">
                     </div>
                     
-                    <!-- European Union Logo -->
                     <div class="logo-container">
-                        <svg class="logo" viewBox="0 0 400 280" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="400" height="200" fill="#003399"/>
-                            <!-- EU Stars in circle -->
-                            <g fill="#FFCC00">
-                                <polygon points="200,40 202,46 208,46 203,50 205,56 200,52 195,56 197,50 192,46 198,46" />
-                                <polygon points="234,52 236,58 242,58 237,62 239,68 234,64 229,68 231,62 226,58 232,58" transform="rotate(30 200 80)"/>
-                                <polygon points="245,80 247,86 253,86 248,90 250,96 245,92 240,96 242,90 237,86 243,86" transform="rotate(60 200 80)"/>
-                                <polygon points="234,108 236,114 242,114 237,118 239,124 234,120 229,124 231,118 226,114 232,114" transform="rotate(90 200 80)"/>
-                                <polygon points="200,120 202,126 208,126 203,130 205,136 200,132 195,136 197,130 192,126 198,126" transform="rotate(120 200 80)"/>
-                                <polygon points="166,108 168,114 174,114 169,118 171,124 166,120 161,124 163,118 158,114 164,114" transform="rotate(150 200 80)"/>
-                                <polygon points="155,80 157,86 163,86 158,90 160,96 155,92 150,96 152,90 147,86 153,86" transform="rotate(180 200 80)"/>
-                                <polygon points="166,52 168,58 174,58 169,62 171,68 166,64 161,68 163,62 158,58 164,58" transform="rotate(210 200 80)"/>
-                                <polygon points="200,40 202,46 208,46 203,50 205,56 200,52 195,56 197,50 192,46 198,46" transform="rotate(240 200 80)"/>
-                                <polygon points="234,52 236,58 242,58 237,62 239,68 234,64 229,68 231,62 226,58 232,58" transform="rotate(270 200 80)"/>
-                                <polygon points="245,80 247,86 253,86 248,90 250,96 245,92 240,96 242,90 237,86 243,86" transform="rotate(300 200 80)"/>
-                                <polygon points="234,108 236,114 242,114 237,118 239,124 234,120 229,124 231,118 226,114 232,114" transform="rotate(330 200 80)"/>
-                            </g>
-                            <text x="200" y="240" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#003399" text-anchor="middle">European Union</text>
-                        </svg>
+                        <img src="images/logos/eu-logo.png" alt="European Union Logo" class="logo" onerror="this.style.display='none';">
                     </div>
                 </div>
                 <div class="title-section">
