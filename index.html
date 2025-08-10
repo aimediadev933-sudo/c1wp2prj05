@@ -66,9 +66,33 @@
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
+            max-width: 150px;
+            object-fit: contain;
         }
 
         .logo:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Fallback for missing logos */
+        .logo-fallback {
+            height: 60px;
+            width: 120px;
+            background: var(--white);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+            color: var(--text);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-fallback:hover {
             transform: translateY(-5px);
         }
 
@@ -274,7 +298,7 @@
                 gap: 1rem;
             }
 
-            .logo {
+            .logo, .logo-fallback {
                 height: 50px;
             }
 
@@ -361,9 +385,15 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo-section">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 120'%3E%3Crect width='300' height='120' fill='%237B2D8E'/%3E%3Ctext x='150' y='70' font-family='Arial' font-size='32' font-weight='bold' fill='white' text-anchor='middle'%3ETEIN*CC%3C/text%3E%3C/svg%3E" alt="TEIN*CC Logo" class="logo">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 120'%3E%3Crect width='300' height='120' fill='%23FF6B35'/%3E%3Ctext x='150' y='70' font-family='Arial' font-size='24' font-weight='bold' fill='white' text-anchor='middle'%3EAsia@Connect%3C/text%3E%3C/svg%3E" alt="Asia@Connect Logo" class="logo">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 120'%3E%3Crect width='300' height='120' fill='%23003399'/%3E%3Ccircle cx='150' cy='40' r='25' fill='none' stroke='%23FFCC00' stroke-width='3'/%3E%3Ctext x='150' y='95' font-family='Arial' font-size='18' font-weight='bold' fill='%23FFCC00' text-anchor='middle'%3EEuropean Union%3C/text%3E%3C/svg%3E" alt="European Union Logo" class="logo">
+                    <!-- Replace these paths with your actual logo file paths -->
+                    <img src="tein-logo.png" alt="TEIN*CC Logo" class="logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-fallback" style="display: none;">TEIN*CC</div>
+                    
+                    <img src="asia-connect-logo.png" alt="Asia@Connect Logo" class="logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-fallback" style="display: none;">Asia@Connect</div>
+                    
+                    <img src="eu-logo.png" alt="European Union Logo" class="logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-fallback" style="display: none;">European Union</div>
                 </div>
                 <div class="title-section">
                     <h1>Network and Information Security Workshop</h1>
